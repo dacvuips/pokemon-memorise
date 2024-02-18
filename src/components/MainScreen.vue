@@ -26,7 +26,7 @@
 <script lang="ts">
 export default {
   methods: {
-    onStart(totalOfBlock) {
+    onStart(totalOfBlock: any) {
       this.$emit('onStart', { totalOfBlock })
     }
   }

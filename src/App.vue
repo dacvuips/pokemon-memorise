@@ -29,15 +29,15 @@ export default {
       settings: {
         totalOfBlocks: 0,
         cardsContext: [],
-        startedAt: null
+        startedAt: 0
       },
       timer: 0,
-      columns: null,
+      columns: '',
       statusMatch: 'default'
     }
   },
   methods: {
-    onHandelBeforeStart(config) {
+    onHandelBeforeStart(config: any) {
       this.settings.totalOfBlocks = config.totalOfBlock
       const firstCards = Array.from(
         {
