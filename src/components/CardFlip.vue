@@ -5,10 +5,7 @@
         <div class="card__content"></div>
       </div>
       <div class="card__face card__face--back">
-        <div
-          class="card__content"
-          :style="{ backgroundImage: `url('../assets/${imageUrl}')` }"
-        ></div>
+        <div class="card__content" :style="{ backgroundImage: `url('/assets/${imageUrl}')` }"></div>
       </div>
     </div>
   </div>
@@ -86,7 +83,7 @@ export default {
   background-color: var(--dark);
 }
 .card__face--front .card__content {
-  background: url('./assets/images/icon_back.png') no-repeat center center;
+  background: url('/assets/images/icon_back.png') no-repeat center center;
   background-size: 40px 40px;
   background-color: var(--dark);
   width: 100%;
